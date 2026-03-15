@@ -1,0 +1,80 @@
+body{
+    background: linear-gradient(135deg, #f88b31, #46dee9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 300px;
+}
+
+/* Caixa do formulário */
+form{
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    width: 320px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border: 3px dashed #1152df; /* cor da logo */
+}
+
+/* Título */
+form::before{
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 50px;
+    color: #f88b31;
+    font-weight: bold;
+}
+
+/* Labels */
+label{
+    font-size: 15px;
+    color: #2d9db3; /* azul da paleta */
+}
+
+/* Campos */
+input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: 2px solid #46dee9; /* azul da logo */
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Quando clica no campo */
+input:focus{
+    border-color: #f88b31;
+    box-shadow: 0 0 8px rgba(248,139,49,0.4);
+}
+
+/* Botão */
+button{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 15px;
+    background: #f88b31; /* laranja da logo */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efeito hover */
+button:hover{
+    background: #e06f18;
+    transform: scale(1.05);
+}
