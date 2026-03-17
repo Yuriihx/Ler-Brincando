@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Escolha o Desenho</title>
+
+<style>
+
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+background: linear-gradient(135deg, #f88b31, #46dee9);
+font-family: Arial;
+}
+
+h1{
+color:white;
+margin-bottom:40px;
+}
+
+.container{
+display:flex;
+gap:30px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+width:200px;
+text-align:center;
+cursor:pointer;
+transition:0.3s;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card:hover{
+transform:scale(1.1);
+}
+
+a{
+text-decoration:none;
+color:black;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Escolha um Desenho</h1>
+
+<div class="container">
+
+<div class="card">
+<a href="video.html?video=chapeuzinho">CHAPEUZINHO VERMELHO</a>
+</div>
+
+<div class="card">
+<a href="video.html?video=porquinhos">TRÊS PORQUINHOS</a>
+</div>
+
+<div class="card">
+<a href="video.html?video=branca">BRANCA DE NEVE</a>
+</div>
+
+</div>
+
+</body>
+</html>

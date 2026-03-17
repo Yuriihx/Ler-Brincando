@@ -9,7 +9,6 @@
 body{
 margin:0;
 height:100vh;
-
 display:flex;
 justify-content:center;
 align-items:center;
@@ -21,15 +20,38 @@ width:1200px;
 border-radius:15px;
 }
 
-</style>    
+</style>
 
 </head>
 
 <body>
 
-<video controls>
-    <source src="videos/video.mp4" type="video/mp4">
+<video id="player" controls>
+<source id="videoSource" src="" type="video/mp4">
 </video>
+
+<script>
+
+const params = new URLSearchParams(window.location.search)
+const video = params.get("video")
+
+const source = document.getElementById("videoSource")
+
+if(video === "chapeuzinho"){
+source.src = "videos/video.mp4"
+}
+
+if(video === "porquinhos"){
+source.src = "videos/porquinho.mp4"
+}
+
+if(video === "branca"){
+source.src = "videos/branca.mp4"
+}
+
+document.getElementById("player").load()
+
+</script>
 
 </body>
 </html>
